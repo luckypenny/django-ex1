@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'bookmark.apps.BookmarkConfig', #추가
+    'blog.apps.BlogConfig', #추가
 ]
 
 MIDDLEWARE = [
@@ -104,8 +105,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-#LANGUAGE_CODE = 'en-us'
-LANGUAGE_CODE = 'ko-kr'
+LANGUAGE_CODE = 'en-us'
+#LANGUAGE_CODE = 'ko-kr'
 
 #TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Seoul'
@@ -122,4 +123,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STAICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] #추가
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')] #추가
